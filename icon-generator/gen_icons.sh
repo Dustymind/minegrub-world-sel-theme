@@ -5,7 +5,7 @@ create_icon ()
 {
     name=$1; line_top=$2; line_bot=$3; srcimg=$4; dstdir=$5;
     if [ -z "$srcimg" ]; then
-      magick -size 96x96 xc:none empty_image.png
+      magick-7 -size 96x96 xc:none empty_image.png
       srcimg="empty_image.png"
     fi
 
@@ -13,7 +13,7 @@ create_icon ()
     Using image: '$srcimg'
     and text:    '$line_top | $line_bot'
     Saving to    '$dstdir'"
-    magick "$srcimg" \
+    magick-7 "$srcimg" \
         -gravity center \
         -crop 1:1 +repage \
         -resize 64x64 \
@@ -52,6 +52,7 @@ c=nobara    && $cmd $c 'Nobara Linux (07/10/2022, 9:11 AM)' 'Creative Mode, Chea
 c=nixos     && $cmd $c 'Nix OS (03/06/2022, 3:34 AM)' 'Spectator Mode, No Cheats, Version: 24.11' $src$c.png $dst
 c=artix     && $cmd $c 'Artix Linux (08/08/2017, 5:18 AM)' 'Creative Mode, No Cheats, Version: 5.6.1' $src$c.png $dst
 c=cachyos   && $cmd $c 'CachyOS (30/12/2022, 12:00 AM)'		'Creative Mode, Cheats, Version: 6.13.7' $src$c.png $dst
+c=aosc   && $cmd $c 'AOSC OS (15/11/2011, 09:51 PM)'		'Creative Mode, Cheats, Version: 12.1.3' $src$c.png $dst
 
 # no minecraft logo yet
 src='./distro-icons/distributor-logo-'
