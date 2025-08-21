@@ -1,3 +1,7 @@
+# AOSC OS 图标已推送至上游，此仓库已归档
+
+-----
+
 **The Minecraft Grub Theme Trio:**
 
 | [Minecraft Main Menu](https://github.com/Lxtharia/minegrub-theme) | *> Minecraft World Selection Menu <* | [Using both themes together](https://github.com/Lxtharia/double-minegrub-menu) |
